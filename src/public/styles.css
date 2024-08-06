@@ -116,3 +116,8 @@ form {
   font-weight: 400;
   font-style: bold;
 }
+
+.submit-button:hover{
+  cursor: pointer;
+  background-color: var(--gray);
+}
