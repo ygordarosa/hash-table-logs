@@ -5,6 +5,10 @@ class EventController{
   constructor(){
     this.allLogsForm = document.getElementById("all-logs-form")
     this.monthLogsForm = document.getElementById("month-logs-form")
+    this.allLogsInput = document.getElementById("all-logs")
+    this.monthInput = document.getElementById("month")
+    this.monthLogsInput = document.getElementById("month-log")
+
     this.initSubmitAllLogsForm()
     this.initSubmitMonthLogsForm()
   }
@@ -14,7 +18,8 @@ class EventController{
     this.allLogsForm.addEventListener("submit", (event) => {
       event.preventDefault()
       console.log("pega a resposta e passa pra proxima function" )
-      let data = 'pra'
+      let data = this.allLogsInput.value
+      console.log(data)
       allLogs(data)
     })
   }
@@ -22,7 +27,10 @@ class EventController{
     this.monthLogsForm.addEventListener("submit", (event) => {
       event.preventDefault()
       console.log("pega a resposta e passa pra proxima function" )
-      let data = 'pra'
+      let data = {
+        "log" : this.monthLogsInput.value,
+        "month" : this.monthInput.value
+      }
       monthLogs(data)
     })
   }
