@@ -52,6 +52,8 @@ main {
   border: none;
   border-radius: 1rem;
   color: var(--white);
+  max-width: 80%;
+  margin-right: 2rem;
 }
 
 
@@ -61,6 +63,7 @@ main {
   border: none;
   border-radius: 1rem;
   color: var(--white);
+  max-width: 80%;
 }
 
 
@@ -120,4 +123,9 @@ form {
 .submit-button:hover{
   cursor: pointer;
   background-color: var(--gray);
+}
+
+.scrollable {
+  overflow-y: auto;
+  max-height: 50%;
 }

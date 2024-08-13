@@ -1,46 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Impostor</title>
-  <link rel="stylesheet" href="styles.css">
-  <script type="module" src="../js/index.js" defer></script>
-</head>
-<body>
-  <header>
-    <div class="title">Busca de logs em Tabela HASH</div>
-  </header>
-  <main>
-    <div id="all-logs-div">
-      <form id="all-logs-form">
-        <div class="input-wrapper">
-          <label for="all-logs">Digite o log que você deseja encontrar</label>
-          <input type="number" name="all-logs" id="all-logs">
-        </div>
-        <button class="submit-button" id="all-logs-submit" type="submit">Enviar</button>
-      </form>
-      <div class="hidden all-logs-result-area">1wjdslfknsdobds  </div>
-    </div>
-    <div id="month-logs-div">
-      <form id="month-logs-form">
-        <div class="input-wrapper">
-          <label for="month">Selecione o mês que deseja encontrar</label>
-          <input type="month" name="month" id="month">
-        </div>
-        <div class="input-wrapper">
-          <label for="month-log">Digite o log que deseja encontrar</label>
-          <input type="number" name="month-log" id="month-log">
-        </div>
-        <button class="submit-button" id="month-submit" type="submit">Enviar</button>
-      </form>
-      <div>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Impostor</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="../js/index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="title">Busca de logs em Tabela HASH</div>
+    </header>
+    <main>
+
+      <div id="all-logs-div">
+
+        <form id="all-logs-form">
+
+          <div class="input-wrapper">
+            <label for="all-logs">Digite o log que você deseja encontrar</label>
+            <input type="number" name="all-logs" id="all-logs" />
+          </div>
+
+          <button class="submit-button" id="all-logs-submit" type="submit">
+            Enviar
+          </button>
+
+        </form>
+        <nav class="scrollable">
+          <div id="all-logs-result-area"></div>
+        </nav>
 
       </div>
-    </div>
-  </main>
-</body>
+
+      <div id="month-logs-div">
+
+        <form id="month-logs-form">
+
+          <div class="input-wrapper">
+            <label for="month">Selecione o mês que deseja encontrar</label>
+            <input type="month" name="month" id="month" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="month-log">Digite o log que deseja encontrar</label>
+            <input type="number" name="month-log" id="month-log" />
+          </div>
+
+          <button class="submit-button" id="month-submit" type="submit">
+            Enviar
+          </button>
+
+        </form>
+        <nav class="scrollable">
+          <div id="month-logs-result-area"></div>
+        </nav>
+
+      </div>
+    </main>
+  </body>
 </html>
